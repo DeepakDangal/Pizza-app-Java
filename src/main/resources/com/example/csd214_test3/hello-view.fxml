@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="509.0" prefWidth="619.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csd214_test3.HelloController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+
+  <Label fx:id="welcomeText" />
+   <AnchorPane prefHeight="458.0" prefWidth="579.0">
+      <children>
+         <Label layoutX="146.0" layoutY="45.0" text="id" />
+         <TextField fx:id="iid" layoutX="171.0" layoutY="41.0" />
+         <TextField fx:id="iname" layoutX="170.0" layoutY="83.0" />
+         <TextField fx:id="isize" layoutX="171.0" layoutY="118.0" />
+         <TextField fx:id="itoppings" layoutX="171.0" layoutY="154.0" />
+         <Label layoutX="129.0" layoutY="87.0" text="name" />
+         <Label layoutX="134.0" layoutY="122.0" text="size" />
+         <Label layoutX="120.0" layoutY="158.0" text="toppings" />
+         <Button layoutX="23.0" layoutY="217.0" mnemonicParsing="false" onAction="#insertClick" text="insert" />
+         <Button layoutX="93.0" layoutY="217.0" mnemonicParsing="false" onAction="#updateClick" text="update" />
+         <Button layoutX="167.0" layoutY="217.0" mnemonicParsing="false" onAction="#deleteClick" text="delete" />
+         <Button layoutX="237.0" layoutY="217.0" mnemonicParsing="false" onAction="#orderClick" text="load data" />
+         <TableView fx:id="tableView" layoutX="14.0" layoutY="274.0" prefHeight="160.0" prefWidth="445.0">
+           <columns>
+             <TableColumn fx:id="id" prefWidth="66.40003204345703" text="id" />
+             <TableColumn fx:id="name" prefWidth="83.99993896484375" text="name" />
+               <TableColumn fx:id="size" prefWidth="83.99993896484375" text="size" />
+               <TableColumn fx:id="toppings" prefWidth="83.99993896484375" text="toppings" />
+               <TableColumn fx:id="total" prefWidth="83.99993896484375" text="total" />
+           </columns>
+         </TableView>
+      </children>
+   </AnchorPane>
+</VBox>
